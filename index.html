@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximun-scale=1,user-scalable=no">
+	<title>Demo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<script type="text/javascript" src="js/iconfont.js"></script>
+</head>
+<body>
+
+	<input type="checkbox" name="set" id="set" hidden="hidden">
+
+	<div class="box-header">
+		<span>Demo</span>
+		<div class="nav-icon clear">
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-shejiaotubiao-02"></use>
+			</svg>
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-shejiaotubiao-03"></use>
+			</svg>
+		</div>
+	</div>
+
+	<!-- main -->
+	<!-- .box-main>(.box-face>.box-title{Demo})+.box-content -->
+	<div class="box-main">
+		<div class="box-face">
+			<div class="box-title">移动端与响应式</div>
+		</div>
+		<div class="box-content">
+			<p>
+				Viewport视窗的设置。
+				//宽度等于设备宽度，浏览器分辨率等于系统分辨率。
+				Width=device-width 
+				//初始化的比例为1。
+				Initial-scale=1 
+				//最小的缩小比例为1。
+				Minimum-scale=1 
+				//最大的放大比例为1。
+				Maximun-scale=1 
+				//用户不允许缩放。
+				User-scalable=no 
+			</p>
+		</div>
+	</div>
+
+	<!-- chars -->
+	<input type="checkbox" name="btn-chars" id="btn-chars" hidden="hidden">
+	<div class="box-chars">
+		<div class="chars"></div>
+	</div>
+
+	<!-- box-set -->
+	<div class="box-set">
+		<label class="box-turn box-set-css iconfont icon-shezhi"></label>
+		<label class="box-turn box-set-css iconfont icon-bianji"></label>
+		<label class="box-turn box-set-css iconfont icon-dianzan"></label>
+		<label class="box-turn box-set-css iconfont icon-shoucang"></label>
+		<label class="box-turn box-set-css iconfont icon-fenxiang"></label>
+		<label class="box-turn box-set-css iconfont icon-shouye"></label>
+		<label for="btn-chars" class="box-turn box-set-css iconfont icon-shuaxin"></label>
+		<label class="box-turn box-set-css iconfont icon-sousuo"></label>
+
+		<label for="set" class="box-turn">T</label>
+	</div>
+	
+</body>
+</html> 
