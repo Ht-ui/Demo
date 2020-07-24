@@ -1,0 +1,244 @@
+@font-face{font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+}
+.icon{
+	width: 1em; height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+body{
+	background: #f1f1f1;
+	font-family: 微软雅黑;
+	margin: 0;
+	padding: 0;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.box-header{
+	width: 100vw;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 50px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,0.9);
+	font-size: 30px;
+	font-weight: 800;
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+	/*使文字无法被选中*/
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.nav-icon{
+	float: right;
+}
+.box-main{
+	width: 70%;
+	background: #ccc;
+	border: 1px solid silver;
+	border-radius: 10px;
+	margin: 50px auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.box-face{
+	width: 100px;
+	height: 100px;
+	background:url(../images/face.png) no-repeat center top;
+	background-size: cover;
+	border-radius: 10px;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	box-shadow: 0 0 10px #333;
+}
+.box-title{
+	font-size: 20px;
+	font-weight: 800;
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+	width: 40vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.box-content{
+	width: 90%;
+	margin: 95px auto 20px;
+}
+.box-turn{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background: white;
+	border: 1px solid silver;
+	border-radius: 10px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 800;
+	font-style: normal;
+	transition: all .4s;
+	box-shadow: 0 0 0 #333;
+	cursor: pointer;
+	/*使文字无法被选中*/
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.box-turn:hover{
+	box-shadow: 0 0 8px #333;
+}
+.box-set{
+	position: fixed;
+	top: calc(100% - 70px);
+	left: 20px;
+}
+.box-set-css{
+	position: absolute;
+	font-weight: 500;
+	bottom: 0px;
+	left: 0px;
+	display: none;
+	z-index: -1;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+}
+#set:checked ~ .box-set label:nth-child(1){
+	display: inline-block;
+	animation: up1 1s forwards;
+}
+@keyframes up1 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 120%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(2){
+	display: inline-block;
+	animation: up2 1s forwards;
+}
+@keyframes up2 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 220%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(3){
+	display: inline-block;
+	animation: up3 1s forwards;
+}
+@keyframes up3 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 320%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(4){
+	display: inline-block;
+	animation: up4 1s forwards;
+}
+@keyframes up4 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 420%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(5){
+	display: inline-block;
+	animation: up5 1s forwards;
+}
+@keyframes up5 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 520%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(6){
+	display: inline-block;
+	animation: up6 1s forwards;
+}
+@keyframes up6 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 620%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(7){
+	display: inline-block;
+	animation: up7 1s forwards;
+}
+@keyframes up7 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 720%;
+	}
+}
+#set:checked ~ .box-set label:nth-child(8){
+	display: inline-block;
+	animation: up8 1s forwards;
+}
+@keyframes up8 {
+	0%{
+		bottom: 0;
+	}
+	100%{
+		bottom: 820%;
+	}
+}
+.chars{
+	width: 170px;
+	height: 300px;
+	animation: chars .8s infinite;
+	animation-timing-function: steps(12);
+	background: url(../images/yumi.png) no-repeat 0 0px;
+	background-size: 100% auto;
+}
+@keyframes chars {
+	0%{
+		background-position: 0 0px;
+	}
+	100%{
+		background-position: 0 -3600px;
+	}
+}
+.box-chars{
+	position: fixed;
+	top: calc(100% - 320px);
+	right: 16px;
+}
+#btn-chars:checked ~ .box-chars{
+	display: none;
+}
